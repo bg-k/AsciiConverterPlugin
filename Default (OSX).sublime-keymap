@@ -1,0 +1,5 @@
+[
+	{ "keys": ["super+ctrl+d"], "command": "example" },
+	{ "keys": ["super+ctrl+h"], "command": "example" },
+	{ "keys": ["super+ctrl+b"], "command": "example" }
+]
