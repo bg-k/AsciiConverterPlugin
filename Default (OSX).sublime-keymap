@@ -1,5 +1,5 @@
 [
 	{ "keys": ["ctrl+a","ctrl+d"], "command": "ascii_to_decimal" },
 	{ "keys": ["ctrl+a","ctrl+h"], "command": "example" },
-	{ "keys": ["ctrl+a","ctrl+b"], "command": "example" }
+	{ "keys": ["ctrl+a","ctrl+b"], "command": "ascii_to_binary" }
 ]
