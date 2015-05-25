@@ -30,6 +30,6 @@ class AsciiToBinaryCommand(sublime_plugin.TextCommand):
 				for char in char_list:
 					if not result_string == "":
 						result_string += " "
-					result_string += format(ord(char),'b')
+					result_string += "0b" + format(ord(char),'b')
 
 				self.view.replace(edit, selected_word, result_string)
