@@ -18,3 +18,19 @@ class AsciiToDecimalCommand(sublime_plugin.TextCommand):
 					result_string += str(ord(char))
 
 				self.view.replace(edit, selected_word, result_string)
+
+class DecimalToAsciiCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for selection in self.view.sel():
+	        selected_dec = self.view.substr(selection)
+	        selected_dec = selected_dec.split(" ")
+	        decimal_list = list(selected_dec)
+
+	        result = ""
+	        for decimal in decimal_list:
+	        	datas = int(decimal)
+	        	if not result == "":
+	        		result += " "
+	        	result += chr(datas)
+
+        self.view.replace(edit, selection, result)
