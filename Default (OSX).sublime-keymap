@@ -1,5 +1,6 @@
-[
-	{ "keys": ["super+ctrl+d"], "command": "example" },
-	{ "keys": ["super+ctrl+h"], "command": "example" },
-	{ "keys": ["super+ctrl+b"], "command": "example" }
-]
+ [
+	{ "keys": ["ctrl+a","ctrl+d"], "command": "example" },
+	{ "keys": ["ctrl+a","ctrl+h"], "command": "example" },
+	{ "keys": ["ctrl+a","ctrl+b"], "command": "example" },
+	{ "keys": ["ctrl+a","ctrl+z"], "command": "decimal_to_ascii" }
+ ]
