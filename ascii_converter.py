@@ -64,3 +64,18 @@ class AsciiToBinaryCommand(sublime_plugin.TextCommand):
 					result_string += "0b" + format(ord(char),'b')
 
 				self.view.replace(edit, selected_word, result_string)
+
+class HexaDecimalToAsciiCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for selection in self.view.sel():
+	        selected_hex = self.view.substr(selection)
+	        selected_hex = selected_hex.split(" ")
+	        hex_list = list(selected_hex)
+	        
+	        result = ""
+	        for hexa in hex_list:
+	        	datas = eval(hexa)
+	        	ss = int(datas)
+	        	result += chr(ss)
+
+        self.view.replace(edit, selection, result)
