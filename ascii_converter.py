@@ -75,3 +75,18 @@ class HexaDecimalToAsciiCommand(sublime_plugin.TextCommand):
                 result += chr(ss)
 
         self.view.replace(edit, selection, result)
+
+class BinaryToAsciiCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for selection in self.view.sel():
+            selected_bin = self.view.substr(selection)
+            selected_bin = selected_bin.split(" ")
+            bin_list = list(selected_bin)
+            
+            result = ""
+            for binary in bin_list:
+                datas = eval(binary)
+                ss = int(datas)
+                result += chr(ss)
+
+        self.view.replace(edit, selection, result)
