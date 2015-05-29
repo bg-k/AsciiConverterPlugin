@@ -82,7 +82,7 @@ class BinaryToAsciiCommand(sublime_plugin.TextCommand):
             selected_bin = self.view.substr(selection)
             selected_bin = selected_bin.split(" ")
             bin_list = list(selected_bin)
-            
+
             result = ""
             for binary in bin_list:
                 datas = eval(binary)
