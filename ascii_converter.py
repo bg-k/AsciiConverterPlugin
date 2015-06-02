@@ -45,21 +45,6 @@ class AsciiToHexaDecimalCommand(sublime_plugin.TextCommand):
 
                 self.view.replace(edit, selected_word, result_string)
 
-class AsciiToBinaryCommand(sublime_plugin.TextCommand):
-    def run(self, edit):
-        for selected_word in self.view.sel():
-            if not selected_word.empty():
-                target_string = self.view.substr(selected_word)
-                char_list = list(target_string)
-
-                result_string = ""
-                for char in char_list:
-                    if not result_string == "":
-                        result_string += " "
-                    result_string += "0b" + format(ord(char),'b')
-
-                self.view.replace(edit, selected_word, result_string)
-
 class HexaDecimalToAsciiCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for selection in self.view.sel():
@@ -75,6 +60,21 @@ class HexaDecimalToAsciiCommand(sublime_plugin.TextCommand):
                     result += chr(decimal)
 
                 self.view.replace(edit, selection, result)
+
+class AsciiToBinaryCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for selected_word in self.view.sel():
+            if not selected_word.empty():
+                target_string = self.view.substr(selected_word)
+                char_list = list(target_string)
+
+                result_string = ""
+                for char in char_list:
+                    if not result_string == "":
+                        result_string += " "
+                    result_string += "0b" + format(ord(char),'b')
+
+                self.view.replace(edit, selected_word, result_string)
 
 class BinaryToAsciiCommand(sublime_plugin.TextCommand):
     def run(self, edit):
