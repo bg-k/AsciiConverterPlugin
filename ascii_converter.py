@@ -25,10 +25,12 @@ class DecimalToAsciiCommand(sublime_plugin.TextCommand):
 
                 result = ""
                 for decimal in decimal_list:
-                    datas = int(decimal)
-                    result += chr(datas)
+                    if decimal.isdigit() and 0 <= int(decimal) <= 127:
+                        datas = int(decimal)
+                        result += chr(datas)
 
-                self.view.replace(edit, selection, result)
+                if result:
+                    self.view.replace(edit, selection, result)
 
 class AsciiToHexaDecimalCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -55,11 +57,13 @@ class HexaDecimalToAsciiCommand(sublime_plugin.TextCommand):
 
                 result = ""
                 for hexa in hex_list:
-                    string_decimal = eval(hexa)
-                    decimal = int(string_decimal)
-                    result += chr(decimal)
+                    if hexa[0] == '0' and hexa[1] == 'x' and str(eval(hexa)).isdigit() and 0 <= eval(hexa) <= 127:
+                        string_decimal = eval(hexa)
+                        decimal = int(string_decimal)
+                        result += chr(decimal)
 
-                self.view.replace(edit, selection, result)
+                if result:
+                    self.view.replace(edit, selection, result)
 
 class AsciiToBinaryCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -86,8 +90,10 @@ class BinaryToAsciiCommand(sublime_plugin.TextCommand):
 
                 result = ""
                 for binary in bin_list:
-                    string_decimal = eval(binary)
-                    decimal = int(string_decimal)
-                    result += chr(decimal)
+                    if binary[0] == '0' and binary[1] == 'b' and str(eval(binary)).isdigit() and 0 <= eval(binary) <= 127:
+                        string_decimal = eval(binary)
+                        decimal = int(string_decimal)
+                        result += chr(decimal)
 
-                self.view.replace(edit, selection, result)
+                if result:
+                    self.view.replace(edit, selection, result)
