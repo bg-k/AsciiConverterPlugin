@@ -1,5 +1,8 @@
-[
-	{ "keys": ["super+ctrl+d"], "command": "example" },
-	{ "keys": ["super+ctrl+h"], "command": "example" },
-	{ "keys": ["super+ctrl+b"], "command": "example" }
-]
+ [
+	{ "keys": ["ctrl+c","ctrl+d"], "command": "ascii_to_decimal" },
+	{ "keys": ["ctrl+c","ctrl+h"], "command": "ascii_to_hexa_decimal" },
+	{ "keys": ["ctrl+c","ctrl+b"], "command": "ascii_to_binary" },
+	{ "keys": ["ctrl+r","ctrl+d"], "command": "decimal_to_ascii" },
+	{ "keys": ["ctrl+r","ctrl+h"], "command": "hexa_decimal_to_ascii" },
+	{ "keys": ["ctrl+r","ctrl+b"], "command": "binary_to_ascii" }
+ ]
