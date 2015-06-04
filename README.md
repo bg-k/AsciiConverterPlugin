@@ -14,10 +14,10 @@ Usage
 ```
 ctrl+c, ctrl+d => Convert ASCII to Decimal
 ctrl+r, ctrl+d => Reconvert Decimal to ASCII
-ctrl+c, ctrl+d => Convert ASCII to HexaDecimal
-ctrl+r, ctrl+d => Reconvert HexaDecimal to ASCII
-ctrl+c, ctrl+d => Convert ASCII to Binary
-ctrl+r, ctrl+d => Reconvert Binary to ASCII
+ctrl+c, ctrl+h => Convert ASCII to HexaDecimal
+ctrl+r, ctrl+h => Reconvert HexaDecimal to ASCII
+ctrl+c, ctrl+b => Convert ASCII to Binary
+ctrl+r, ctrl+b => Reconvert Binary to ASCII
 ```
 
 Install
