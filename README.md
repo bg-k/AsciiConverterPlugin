@@ -23,7 +23,7 @@ ctrl+r, ctrl+b => Reconvert Binary to ASCII
 Install
 ---
 
-We're still working on registration to Package Control.
+Run "Package Control, Install Package", and find `AsciiConverter`.
 
 How to Contribute
 ---
