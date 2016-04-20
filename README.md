@@ -6,7 +6,7 @@ Convert Decimal, HexaDecimal and Binary to Ascii, and vice versa.
 Demo
 ---
 
-<img src="http://penginryo.github.io/img/demo.gif">
+<img src="http://penginryo.github.io/AsciiConverterPlugin/demo.gif">
 
 Usage
 ---
