@@ -6,7 +6,7 @@ Convert Decimal, HexaDecimal and Binary to Ascii, and vice versa.
 Demo
 ---
 
-<img src="http://penginryo.github.io/AsciiConverterPlugin/demo.gif">
+<img src="http://bg-k.github.io/AsciiConverterPlugin/demo.gif">
 
 Usage
 ---
@@ -30,7 +30,7 @@ How to Contribute
 
 We are waiting for you to:
 
-1. Fork it ( https://github.com/penginryo/AsciiConverterPlugin/fork )
+1. Fork it ( https://github.com/bg-k/AsciiConverterPlugin/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -40,10 +40,10 @@ License
 ---
 
 MIT LICENSE  
-[https://github.com/penginryo/AsciiConverterPlugin/blob/master/LICENSE.txt](https://github.com/penginryo/AsciiConverterPlugin/blob/master/LICENSE.txt)
+[https://github.com/bg-k/AsciiConverterPlugin/blob/master/LICENSE.txt](https://github.com/bg-k/AsciiConverterPlugin/blob/master/LICENSE.txt)
 
 Authors
 ---
 
-penginryo [https://github.com/penginryo](https://github.com/penginryo)  
+bg-k [https://github.com/bg-k](https://github.com/bg-k)  
 chan_gami [https://github.com/changami](https://github.com/changami)
